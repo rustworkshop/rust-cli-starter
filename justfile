@@ -4,14 +4,14 @@ package_name := `sed -En 's/name[[:space:]]*=[[:space:]]*"([^"]+)"/\1/p' Cargo.t
 package_version := `sed -En 's/version[[:space:]]*=[[:space:]]*"([^"]+)"/\1/p' Cargo.toml | head -1`
 dockerhub_org := "ruststarter"
 
+run-tests:
+	cargo test --all
+
 run-test TEST:
 	cargo test --test {{TEST}}
 
 debug TEST:
 	cargo test --test {{TEST}} --features debug
-
-run-tests:
-	cargo test --all
 
 bench:
 	cargo bench
