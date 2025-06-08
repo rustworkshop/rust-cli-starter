@@ -39,3 +39,11 @@ build-image:
 push-image:
     docker tag {{package_name}}:{{package_version}} {{dockerhub_org}}/{{package_name}}:{{package_version}}
     docker push {{dockerhub_org}}/{{package_name}}:{{package_version}}
+
+upgrade-rust:
+  scripts/upgrade-rust.sh
+
+upgrade-crates:
+  scripts/upgrade-crates.sh
+
+upgrade: upgrade-rust upgrade-crates
