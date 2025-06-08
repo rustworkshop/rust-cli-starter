@@ -27,7 +27,7 @@ $ just run-tests
 
 ### Commit Messages
 
-Use a [conventional](https://github.com/ajoslin/conventional-changelog/blob/a5505865ff3dd710cf757f50530e73ef0ca641da/conventions/angular.md) changelog format so the changelog can be updated automatically using [clog](https://github.com/clog-tool/clog-cli)
+Use a [conventional](https://github.com/ajoslin/conventional-changelog/blob/a5505865ff3dd710cf757f50530e73ef0ca641da/conventions/angular.md) commit format for automatic release notes.
 
  * Please format your commit subject line using the following format: `TYPE(COMPONENT): MESSAGE` where `TYPE` is one of the following:
     - `feat` - A new feature of an existing API
